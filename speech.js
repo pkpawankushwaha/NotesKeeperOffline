@@ -41,7 +41,7 @@ function detect() {
     } else { 
         detector = false; 
     } 
-    alert(detector);
+    //alert(detector);
     if(detector==true){
         var txt=document.getElementById('txtarea-notes-mic');
         var tit=document.getElementById('title-notes-mic');
