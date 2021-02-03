@@ -27,6 +27,29 @@ function start_record(){
         toChange.value=curr;
     }
 }
+var detector=''
+function detect() { 
+  
+    if (navigator.userAgent.match(/Android/i) 
+        || navigator.userAgent.match(/webOS/i) 
+        || navigator.userAgent.match(/iPhone/i)  
+        || navigator.userAgent.match(/iPad/i)  
+        || navigator.userAgent.match(/iPod/i) 
+        || navigator.userAgent.match(/BlackBerry/i) 
+        || navigator.userAgent.match(/Windows Phone/i)) { 
+        detector = true; 
+    } else { 
+        detector = false; 
+    } 
+   
+    if(detector==true){
+        var txt=document.getElementById('txtarea-notes-mic');
+        var tit=document.getElementById('title-notes-mic');
+        txt.style.display='none';
+        tit.style.display='none';
+    }
+} 
+
 
 function stop_record(){
     recognition.stop();
