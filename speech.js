@@ -41,13 +41,14 @@ function detect() {
     } else { 
         detector = false; 
     } 
-   
+    alert(detector);
     if(detector==true){
         var txt=document.getElementById('txtarea-notes-mic');
         var tit=document.getElementById('title-notes-mic');
         txt.style.display='none';
         tit.style.display='none';
     }
+    
 } 
 
 detect();
