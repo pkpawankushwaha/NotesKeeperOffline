@@ -50,6 +50,7 @@ function detect() {
     }
 } 
 
+detect();
 
 function stop_record(){
     recognition.stop();
